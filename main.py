@@ -9,7 +9,7 @@ TEXT = "Subject: No software\nYou don't need another app. You're up at six, out 
 def main():
     text = TEXT
     assert 1 <= len(text) <= 280
-    output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
+    output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", os.environ.get("OUTPUT_DIR", "/output")))
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "entry.txt").write_bytes(text.encode("utf-8"))
     print(len(text), file=sys.stderr)
