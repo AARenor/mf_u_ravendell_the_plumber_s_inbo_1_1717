@@ -9,6 +9,6 @@ Subject: No software
 You don't need another app. You're up at six, out on a leak, and keying invoices at ten. I'll match bank lines to jobs, file receipts, list who owes you. £190/month. Don't send the whole file; send the unpaid jobs first. Nick
 ```
 
-Run: `MAKEFUN_OUTPUT_DIR=out python3 main.py`
+`MAKEFUN_OUTPUT_DIR=out python3 main.py`
 
 License: MIT.
